@@ -68,5 +68,10 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func finishPickingImage(sender: UIButton) {
+        
+    }
+    
+    
 }
 

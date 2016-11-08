@@ -381,6 +381,7 @@
                                 <rect key="frame" x="279" y="461" width="41" height="30"/>
                                 <state key="normal" title="Finish"/>
                                 <connections>
+                                    <action selector="finishPickingImage:" destination="HTI-un-cjq" eventType="touchUpInside" id="Er7-tw-14t"/>
                                     <segue destination="QNG-Nv-oSy" kind="show" id="SOw-Ys-6PJ"/>
                                 </connections>
                             </button>
