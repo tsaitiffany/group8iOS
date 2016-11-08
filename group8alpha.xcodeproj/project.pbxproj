@@ -13,6 +13,8 @@
 		1000B5D51DBD562A003495F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1000B5D41DBD562A003495F4 /* Assets.xcassets */; };
 		1000B5D81DBD562A003495F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1000B5D61DBD562A003495F4 /* LaunchScreen.storyboard */; };
 		1000B5E41DBD61AE003495F4 /* wafbasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000B5E31DBD61AE003495F4 /* wafbasicViewController.swift */; };
+		7972FCC21DD13F1600A95865 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972FCC11DD13F1600A95865 /* PictureViewController.swift */; };
+		7972FCC41DD15F1D00A95865 /* faceDisplayImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972FCC31DD15F1D00A95865 /* faceDisplayImageView.swift */; };
 		98612E641DC1AC5F00854806 /* PauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98612E631DC1AC5F00854806 /* PauseViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		1000B5D71DBD562A003495F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1000B5D91DBD562A003495F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1000B5E31DBD61AE003495F4 /* wafbasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wafbasicViewController.swift; sourceTree = "<group>"; };
+		7972FCC11DD13F1600A95865 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		7972FCC31DD15F1D00A95865 /* faceDisplayImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = faceDisplayImageView.swift; sourceTree = "<group>"; };
 		98612E631DC1AC5F00854806 /* PauseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +70,8 @@
 				1000B5D91DBD562A003495F4 /* Info.plist */,
 				1000B5E31DBD61AE003495F4 /* wafbasicViewController.swift */,
 				98612E631DC1AC5F00854806 /* PauseViewController.swift */,
+				7972FCC11DD13F1600A95865 /* PictureViewController.swift */,
+				7972FCC31DD15F1D00A95865 /* faceDisplayImageView.swift */,
 			);
 			path = group8alpha;
 			sourceTree = "<group>";
@@ -141,10 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7972FCC41DD15F1D00A95865 /* faceDisplayImageView.swift in Sources */,
 				1000B5D01DBD562A003495F4 /* ViewController.swift in Sources */,
 				98612E641DC1AC5F00854806 /* PauseViewController.swift in Sources */,
 				1000B5E41DBD61AE003495F4 /* wafbasicViewController.swift in Sources */,
 				1000B5CE1DBD562A003495F4 /* AppDelegate.swift in Sources */,
+				7972FCC21DD13F1600A95865 /* PictureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
