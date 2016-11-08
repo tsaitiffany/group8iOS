@@ -15,6 +15,10 @@
 		1000B5E41DBD61AE003495F4 /* wafbasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000B5E31DBD61AE003495F4 /* wafbasicViewController.swift */; };
 		7972FCC21DD13F1600A95865 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972FCC11DD13F1600A95865 /* PictureViewController.swift */; };
 		7972FCC71DD1648C00A95865 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7972FCC51DD1648C00A95865 /* Model.xcdatamodeld */; };
+		7972FCE71DD1740C00A95865 /* FullRes+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972FCE31DD1740C00A95865 /* FullRes+CoreDataProperties.swift */; };
+		7972FCE81DD1740C00A95865 /* FullRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972FCE41DD1740C00A95865 /* FullRes.swift */; };
+		7972FCE91DD1740C00A95865 /* Thumbnail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972FCE51DD1740C00A95865 /* Thumbnail+CoreDataProperties.swift */; };
+		7972FCEA1DD1740C00A95865 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972FCE61DD1740C00A95865 /* Thumbnail.swift */; };
 		98612E641DC1AC5F00854806 /* PauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98612E631DC1AC5F00854806 /* PauseViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		1000B5E31DBD61AE003495F4 /* wafbasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wafbasicViewController.swift; sourceTree = "<group>"; };
 		7972FCC11DD13F1600A95865 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		7972FCC61DD1648C00A95865 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		7972FCE31DD1740C00A95865 /* FullRes+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FullRes+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7972FCE41DD1740C00A95865 /* FullRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullRes.swift; sourceTree = "<group>"; };
+		7972FCE51DD1740C00A95865 /* Thumbnail+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Thumbnail+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7972FCE61DD1740C00A95865 /* Thumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 		98612E631DC1AC5F00854806 /* PauseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +70,10 @@
 		1000B5CC1DBD562A003495F4 /* group8alpha */ = {
 			isa = PBXGroup;
 			children = (
+				7972FCE31DD1740C00A95865 /* FullRes+CoreDataProperties.swift */,
+				7972FCE41DD1740C00A95865 /* FullRes.swift */,
+				7972FCE51DD1740C00A95865 /* Thumbnail+CoreDataProperties.swift */,
+				7972FCE61DD1740C00A95865 /* Thumbnail.swift */,
 				1000B5CD1DBD562A003495F4 /* AppDelegate.swift */,
 				1000B5CF1DBD562A003495F4 /* ViewController.swift */,
 				1000B5D11DBD562A003495F4 /* Main.storyboard */,
@@ -147,11 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7972FCE71DD1740C00A95865 /* FullRes+CoreDataProperties.swift in Sources */,
 				1000B5D01DBD562A003495F4 /* ViewController.swift in Sources */,
 				98612E641DC1AC5F00854806 /* PauseViewController.swift in Sources */,
 				7972FCC71DD1648C00A95865 /* Model.xcdatamodeld in Sources */,
 				1000B5E41DBD61AE003495F4 /* wafbasicViewController.swift in Sources */,
+				7972FCE91DD1740C00A95865 /* Thumbnail+CoreDataProperties.swift in Sources */,
+				7972FCE81DD1740C00A95865 /* FullRes.swift in Sources */,
 				1000B5CE1DBD562A003495F4 /* AppDelegate.swift in Sources */,
+				7972FCEA1DD1740C00A95865 /* Thumbnail.swift in Sources */,
 				7972FCC21DD13F1600A95865 /* PictureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,10 +281,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = group8alpha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cs378.group8alpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -276,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = group8alpha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cs378.group8alpha;

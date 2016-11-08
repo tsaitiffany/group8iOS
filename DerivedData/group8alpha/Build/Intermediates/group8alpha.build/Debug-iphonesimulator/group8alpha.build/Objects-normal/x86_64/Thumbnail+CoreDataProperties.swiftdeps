@@ -1,0 +1,80 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["C11group8alpha9Thumbnail", ""]
+- ["C11group8alpha9Thumbnail", "imageData"]
+- ["C11group8alpha9Thumbnail", "id"]
+- ["C11group8alpha9Thumbnail", "fullRes"]
+provides-dynamic-lookup:
+- "id"
+- "imageData"
+- "fullRes"
+depends-top-level:
+- "Thumbnail"
+- "NSData"
+- "NSNumber"
+- "FullRes"
+depends-member:
+- ["Ps9AnyObject", "fullRes"]
+- ["Ps9AnyObject", "id"]
+- ["Ps9AnyObject", "imageData"]
+- ["Ps11CVarArgType", "fullRes"]
+- ["Ps11CVarArgType", "id"]
+- ["Ps11CVarArgType", "imageData"]
+- ["Ps28CustomDebugStringConvertible", "fullRes"]
+- ["Ps28CustomDebugStringConvertible", "id"]
+- ["Ps28CustomDebugStringConvertible", "imageData"]
+- ["Ps23CustomStringConvertible", "fullRes"]
+- ["Ps23CustomStringConvertible", "id"]
+- ["Ps23CustomStringConvertible", "imageData"]
+- ["Ps9Equatable", "fullRes"]
+- ["Ps9Equatable", "id"]
+- ["Ps9Equatable", "imageData"]
+- ["Ps8Hashable", "fullRes"]
+- ["Ps8Hashable", "id"]
+- ["Ps8Hashable", "imageData"]
+- ["CSo15NSManagedObject", "FullRes"]
+- ["CSo15NSManagedObject", "NSData"]
+- ["CSo15NSManagedObject", "NSNumber"]
+- ["CSo15NSManagedObject", "fullRes"]
+- ["CSo15NSManagedObject", "id"]
+- ["CSo15NSManagedObject", "imageData"]
+- ["CSo8NSObject", "FullRes"]
+- ["CSo8NSObject", "NSData"]
+- ["CSo8NSObject", "NSNumber"]
+- ["CSo8NSObject", "fullRes"]
+- ["CSo8NSObject", "id"]
+- ["CSo8NSObject", "imageData"]
+- ["PSo16NSObjectProtocol", "fullRes"]
+- ["PSo16NSObjectProtocol", "id"]
+- ["PSo16NSObjectProtocol", "imageData"]
+- ["C11group8alpha9Thumbnail", "FullRes"]
+- ["C11group8alpha9Thumbnail", "NSData"]
+- ["C11group8alpha9Thumbnail", "NSNumber"]
+- ["C11group8alpha9Thumbnail", "fullRes"]
+- ["C11group8alpha9Thumbnail", "id"]
+- ["C11group8alpha9Thumbnail", "imageData"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "CSo15NSManagedObject"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C11group8alpha9Thumbnail"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "c5d9e006d501a4b8ceaa871a589bedd8"

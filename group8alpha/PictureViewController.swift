@@ -7,12 +7,18 @@
 //
 
 import UIKit
-import AVFoundation
+import CoreData
 
 class PictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    @IBOutlet weak var imageView: UIImageView!
+    var pictures = [NSManagedObject]()
     
+    //A queue to save the image without freezing the UI
+    let saveQueue = dispatch_queue_create("saveQueue", DISPATCH_QUEUE_CONCURRENT)
+    //The managed object context for saving the image to
+    let managedContext = AppDelegate().managedObjectContext
+    
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,34 +48,94 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         presentViewController(picker, animated: true, completion: nil)
     }
     
-    func setProfileImage(imageToResize: UIImage, onImageView: UIImageView) -> UIImage{
-        let width = imageToResize.size.width
-        let height = imageToResize.size.height
+    
+    //rescales images to passed size
+    func scale(imageToResize :UIImage, toSize newSize:CGSize) -> UIImage{
+        let aspectFill = resizeFill(imageToResize.size, toSize : newSize)
         
-        var scaleFactor : CGFloat
-        
-        if(width > height){
-            scaleFactor = onImageView.frame.size.height/height
-        }
-        else{
-            scaleFactor = onImageView.frame.size.width/width
-        }
-        
-        UIGraphicsBeginImageContextWithOptions(CGSizeMake(width * scaleFactor, height * scaleFactor), false, 0.0)
-        imageToResize.drawInRect(CGRectMake(0, 0, width * scaleFactor, height * scaleFactor))
-        let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsBeginImageContextWithOptions(aspectFill, false, 0.0)
+        imageToResize.drawInRect(CGRectMake(0, 0, aspectFill.width, aspectFill.height))
+        let newImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        return resizedImage
+        return newImage
     }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        imageView.image = setProfileImage((info[UIImagePickerControllerOriginalImage] as? UIImage)!, onImageView: imageView)
+    func resizeFill(fromSize : CGSize, toSize : CGSize) -> CGSize{
+        let aspectOne = fromSize.height / fromSize.width
+        let aspectTwo = toSize.height / toSize.width
+        
+        let scale : CGFloat
+        
+        if aspectOne < aspectTwo {
+            scale = fromSize.height / toSize.height
+        } else {
+            scale = fromSize.width / toSize.width
+        }
+        
+        let newHeight = fromSize.height / scale
+        let newWidth = fromSize.width / scale
+        
+        return CGSize(width: newWidth, height: newHeight)
+        
+        
+    }
+    
+    func prepareForImageSaving(image : UIImage) {
+        let date : Double = NSDate().timeIntervalSince1970
+        
+        dispatch_async(saveQueue){
+            guard let imageData = UIImageJPEGRepresentation(image, 1) else {
+                print("jpeg error")
+                return
+            }
+        
+            //scales image
+            let thumbnail = self.scale(image, toSize: self.view.frame.size)
+        
+            guard let thumbnailData = UIImageJPEGRepresentation(thumbnail, 0.7) else {
+                print("jpeg error")
+                return
+            }
+            
+            self.saveImage(imageData, thumbnailData: thumbnailData, date: date)
+        }
+    }
+
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]?) {
+        
+        imageView.image = scale((info![UIImagePickerControllerOriginalImage] as? UIImage)!, toSize : imageView.frame.size)
+        
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    func saveImage(imageData:NSData, thumbnailData:NSData, date:Double){
+        dispatch_barrier_async(saveQueue){
+            guard let fullRes = NSEntityDescription.insertNewObjectForEntityForName("FullRes", inManagedObjectContext: self.managedContext) as? FullRes,
+                let thumbnail = NSEntityDescription.insertNewObjectForEntityForName("Thumbnail", inManagedObjectContext: self.managedContext) as? Thumbnail else {
+                    print("moc error")
+                    return
+            }
+            
+            fullRes.imageData = imageData
+            
+            thumbnail.imageData = thumbnailData
+            thumbnail.id = date as NSNumber
+            
+            thumbnail.fullRes = fullRes
+            
+            do {
+                try self.managedContext.save()
+            } catch {
+                fatalError("Failure to save context: \(error)")
+            }
+            
+            self.managedContext.refreshAllObjects()
+        }
+    }
+    
     @IBAction func finishPickingImage(sender: UIButton) {
-        
+       prepareForImageSaving(imageView.image!)
     }
     
     
