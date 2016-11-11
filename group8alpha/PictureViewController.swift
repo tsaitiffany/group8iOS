@@ -31,21 +31,21 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func photoLibraryAction(sender: UIButton) {
+
+    @IBAction func photoLibraryAction(sender: AnyObject) {
         let picker = UIImagePickerController()
-        picker.delegate = self
-        picker.sourceType = .PhotoLibrary
+                picker.delegate = self
+                picker.sourceType = .PhotoLibrary
         
-        presentViewController(picker, animated: true, completion: nil)
-        
+                presentViewController(picker, animated: true, completion: nil)
     }
     
-    @IBAction func cameraAction(sender: UIButton) {
+    @IBAction func cameraAction(sender: AnyObject) {
         let picker = UIImagePickerController()
-        picker.delegate = self
-        picker.sourceType = .Camera
+                picker.delegate = self
+                picker.sourceType = .Camera
         
-        presentViewController(picker, animated: true, completion: nil)
+                presentViewController(picker, animated: true, completion: nil)
     }
     
     

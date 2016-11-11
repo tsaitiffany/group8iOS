@@ -51,6 +51,7 @@ class wafbasicViewController: UIViewController, UIPopoverPresentationControllerD
     var showTime:Double = 8.0
     
     //labels
+
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var lvlLabel: UILabel!
     @IBOutlet weak var missLabel: UILabel!

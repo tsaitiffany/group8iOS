@@ -20,6 +20,7 @@
 		7972FCE91DD1740C00A95865 /* Thumbnail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972FCE51DD1740C00A95865 /* Thumbnail+CoreDataProperties.swift */; };
 		7972FCEA1DD1740C00A95865 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972FCE61DD1740C00A95865 /* Thumbnail.swift */; };
 		98612E641DC1AC5F00854806 /* PauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98612E631DC1AC5F00854806 /* PauseViewController.swift */; };
+		98F6D0981DD2E083005CF87B /* StretchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F6D0971DD2E083005CF87B /* StretchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		7972FCE51DD1740C00A95865 /* Thumbnail+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Thumbnail+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7972FCE61DD1740C00A95865 /* Thumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 		98612E631DC1AC5F00854806 /* PauseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseViewController.swift; sourceTree = "<group>"; };
+		98F6D0971DD2E083005CF87B /* StretchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StretchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				1000B5E31DBD61AE003495F4 /* wafbasicViewController.swift */,
 				98612E631DC1AC5F00854806 /* PauseViewController.swift */,
 				7972FCC11DD13F1600A95865 /* PictureViewController.swift */,
+				98F6D0971DD2E083005CF87B /* StretchViewController.swift */,
 			);
 			path = group8alpha;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				7972FCE71DD1740C00A95865 /* FullRes+CoreDataProperties.swift in Sources */,
 				1000B5D01DBD562A003495F4 /* ViewController.swift in Sources */,
 				98612E641DC1AC5F00854806 /* PauseViewController.swift in Sources */,
+				98F6D0981DD2E083005CF87B /* StretchViewController.swift in Sources */,
 				7972FCC71DD1648C00A95865 /* Model.xcdatamodeld in Sources */,
 				1000B5E41DBD61AE003495F4 /* wafbasicViewController.swift in Sources */,
 				7972FCE91DD1740C00A95865 /* Thumbnail+CoreDataProperties.swift in Sources */,
