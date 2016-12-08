@@ -1,13 +1,17 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
-options: "940e31293d2333f4d335fa83895bca8a"
-build_time: [531889416, 80801000]
+options: "71f6b2ad6b52043c117a2f650cc27fe3"
+build_time: [534538558, 875104000]
 inputs:
-  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/FullRes+CoreDataProperties.swift": [531888395, 0]
-  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/ViewController.swift": [531866207, 0]
-  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/PauseViewController.swift": [531866207, 0]
-  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/wafbasicViewController.swift": [531866207, 0]
-  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/Thumbnail+CoreDataProperties.swift": [531888395, 0]
-  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/FullRes.swift": [531888395, 0]
-  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/AppDelegate.swift": [531889412, 0]
-  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/Thumbnail.swift": [531888395, 0]
-  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/PictureViewController.swift": [531889354, 0]
+  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/FinishedViewController.swift": [534536565, 0]
+  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/fawViewController.swift": [534536565, 0]
+  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/FullRes+CoreDataProperties.swift": [534536565, 0]
+  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/ViewController.swift": [534536565, 0]
+  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/PauseViewController.swift": [534536565, 0]
+  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/StretchViewController.swift": [534536565, 0]
+  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/wafbasicViewController.swift": [534536565, 0]
+  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/Thumbnail+CoreDataProperties.swift": [534536565, 0]
+  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/FullRes.swift": [534536565, 0]
+  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/AppDelegate.swift": [534536565, 0]
+  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/Thumbnail.swift": [534536565, 0]
+  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/ManageFacesCollectionViewController.swift": [534536565, 0]
+  "/Users/apt443/Documents/IOS/group8iOS/group8alpha/PictureViewController.swift": [534536565, 0]

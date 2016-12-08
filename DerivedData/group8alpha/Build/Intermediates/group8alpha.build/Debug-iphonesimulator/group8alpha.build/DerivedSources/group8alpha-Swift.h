@@ -125,6 +125,20 @@ SWIFT_CLASS("_TtC11group8alpha11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC11group8alpha22FinishedViewController")
+@interface FinishedViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified score;
+@property (nonatomic, copy) NSString * _Nonnull result;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSEntityDescription;
 
 SWIFT_CLASS_NAMED("FullRes")
@@ -140,9 +154,25 @@ SWIFT_CLASS_NAMED("FullRes")
 @property (nonatomic, strong) Thumbnail * _Nullable thumbnail;
 @end
 
-@class UILabel;
-@class NSBundle;
-@class NSCoder;
+@class UIImage;
+@class UICollectionView;
+@class NSIndexPath;
+@class UICollectionViewCell;
+@class UICollectionViewLayout;
+
+SWIFT_CLASS("_TtC11group8alpha35ManageFacesCollectionViewController")
+@interface ManageFacesCollectionViewController : UICollectionViewController
+@property (nonatomic, readonly, strong) NSManagedObjectContext * _Nonnull managedContext;
+@property (nonatomic, copy) NSArray<UIImage *> * _Nullable pictures;
+- (void)viewDidLoad;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithCollectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC11group8alpha19PauseViewController")
 @interface PauseViewController : UIViewController
@@ -150,33 +180,95 @@ SWIFT_CLASS("_TtC11group8alpha19PauseViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified levelVal;
 @property (nonatomic, copy) NSString * _Nonnull levelP;
 @property (nonatomic, copy) NSString * _Nonnull scoreP;
+@property (nonatomic) NSInteger miss;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
-@class UIImage;
 @class UIImagePickerController;
+@class UIButton;
 @class UIImageView;
 
 SWIFT_CLASS("_TtC11group8alpha21PictureViewController")
 @interface PictureViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
-@property (nonatomic, copy) NSArray<NSManagedObject *> * _Nonnull pictures;
 @property (nonatomic, readonly, strong) dispatch_queue_t _Null_unspecified saveQueue;
 @property (nonatomic, readonly, strong) NSManagedObjectContext * _Nonnull managedContext;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (IBAction)photoLibraryAction:(UIButton * _Nonnull)sender;
-- (IBAction)cameraAction:(UIButton * _Nonnull)sender;
+- (IBAction)photoLibraryAction:(id _Nonnull)sender;
+- (IBAction)cameraAction:(id _Nonnull)sender;
 - (UIImage * _Nonnull)scale:(UIImage * _Nonnull)imageToResize toSize:(CGSize)newSize;
 - (CGSize)resizeFill:(CGSize)fromSize toSize:(CGSize)toSize;
 - (void)prepareForImageSaving:(UIImage * _Nonnull)image;
-- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nullable)info;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (void)saveImage:(NSData * _Nonnull)imageData thumbnailData:(NSData * _Nonnull)thumbnailData date:(double)date;
 - (IBAction)finishPickingImage:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSTimer;
+@class UIPresentationController;
+
+SWIFT_CLASS("_TtC11group8alpha21StretchViewController")
+@interface StretchViewController : UIViewController <UIAdaptivePresentationControllerDelegate, UIPopoverPresentationControllerDelegate>
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified b00;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified b01;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified b02;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified b10;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified b11;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified b12;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified b20;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified b21;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified b22;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified nextButton;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified missLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lvlLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified scoreLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified correctLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified factLabel;
+@property (nonatomic, strong) NSTimer * _Nonnull timer00;
+@property (nonatomic, strong) NSTimer * _Nonnull timer01;
+@property (nonatomic, strong) NSTimer * _Nonnull timer02;
+@property (nonatomic, strong) NSTimer * _Nonnull timer10;
+@property (nonatomic, strong) NSTimer * _Nonnull timer11;
+@property (nonatomic, strong) NSTimer * _Nonnull timer12;
+@property (nonatomic, strong) NSTimer * _Nonnull timer20;
+@property (nonatomic, strong) NSTimer * _Nonnull timer21;
+@property (nonatomic, strong) NSTimer * _Nonnull timer22;
+@property (nonatomic) NSInteger score;
+@property (nonatomic) NSInteger level;
+@property (nonatomic) BOOL lost;
+@property (nonatomic) NSInteger miss;
+@property (nonatomic) NSInteger maxBtns;
+@property (nonatomic) NSInteger btnCount;
+@property (nonatomic) double hideTime;
+@property (nonatomic) double showTime;
+@property (nonatomic, copy) NSArray<NSArray<NSNumber *> *> * _Nonnull shownBtns;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull facts;
+- (IBAction)button00:(id _Nonnull)sender;
+- (IBAction)button01:(id _Nonnull)sender;
+- (IBAction)button02:(id _Nonnull)sender;
+- (IBAction)button10:(id _Nonnull)sender;
+- (IBAction)button11:(id _Nonnull)sender;
+- (IBAction)button12:(id _Nonnull)sender;
+- (IBAction)button20:(id _Nonnull)sender;
+- (IBAction)button21:(id _Nonnull)sender;
+- (IBAction)button22:(id _Nonnull)sender;
+- (void)checkIfWon;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)runGame;
+- (BOOL)randomBool;
+- (IBAction)nextLvlAction:(id _Nonnull)sender;
+- (void)showButton;
+- (void)hideButton;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController * _Nonnull)controller;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -195,18 +287,100 @@ SWIFT_CLASS_NAMED("Thumbnail")
 @property (nonatomic, strong) FullRes * _Nullable fullRes;
 @end
 
+@class UITextField;
 
 SWIFT_CLASS("_TtC11group8alpha14ViewController")
 @interface ViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified logoutBtn;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)createAccBtn:(id _Nonnull)sender;
+- (IBAction)loginBtn:(id _Nonnull)sender;
+- (IBAction)logoutBtnAction:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSTimer;
-@class UIStoryboardSegue;
-@class UIPresentationController;
+
+SWIFT_CLASS("_TtC11group8alpha17fawViewController")
+@interface fawViewController : UIViewController <UIAdaptivePresentationControllerDelegate, UIPopoverPresentationControllerDelegate>
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified gameOver;
+@property (nonatomic) NSInteger seconds;
+@property (nonatomic, strong) NSTimer * _Nonnull hideTimer;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bTL;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bTM;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bTR;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bML;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bmid;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bMR;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bBL;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bBM;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bBR;
+@property (nonatomic, strong) NSTimer * _Nonnull timerTLa;
+@property (nonatomic, strong) NSTimer * _Nonnull timerTLb;
+@property (nonatomic, strong) NSTimer * _Nonnull timerTMa;
+@property (nonatomic, strong) NSTimer * _Nonnull timerTMb;
+@property (nonatomic, strong) NSTimer * _Nonnull timerTRa;
+@property (nonatomic, strong) NSTimer * _Nonnull timerTRb;
+@property (nonatomic, strong) NSTimer * _Nonnull timerMLa;
+@property (nonatomic, strong) NSTimer * _Nonnull timerMLb;
+@property (nonatomic, strong) NSTimer * _Nonnull timerMida;
+@property (nonatomic, strong) NSTimer * _Nonnull timerMidb;
+@property (nonatomic, strong) NSTimer * _Nonnull timerMRa;
+@property (nonatomic, strong) NSTimer * _Nonnull timerMRb;
+@property (nonatomic, strong) NSTimer * _Nonnull timerBLa;
+@property (nonatomic, strong) NSTimer * _Nonnull timerBLb;
+@property (nonatomic, strong) NSTimer * _Nonnull timerBMa;
+@property (nonatomic, strong) NSTimer * _Nonnull timerBMb;
+@property (nonatomic, strong) NSTimer * _Nonnull timerBRa;
+@property (nonatomic, strong) NSTimer * _Nonnull timerBRb;
+@property (nonatomic) uint32_t hideTime;
+@property (nonatomic) double showTime;
+@property (nonatomic) NSInteger result;
+@property (nonatomic) BOOL lost;
+- (IBAction)TL:(UIButton * _Nonnull)sender;
+- (IBAction)TM:(UIButton * _Nonnull)sender;
+- (IBAction)TR:(UIButton * _Nonnull)sender;
+- (IBAction)ML:(UIButton * _Nonnull)sender;
+- (IBAction)mid:(UIButton * _Nonnull)sender;
+- (IBAction)MR:(UIButton * _Nonnull)sender;
+- (IBAction)BL:(UIButton * _Nonnull)sender;
+- (IBAction)BM:(UIButton * _Nonnull)sender;
+- (IBAction)BR:(UIButton * _Nonnull)sender;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified score;
+- (void)addPoints;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)runGame;
+- (void)showButtonTL;
+- (void)hideButtonTL;
+- (void)showButtonTM;
+- (void)hideButtonTM;
+- (void)showButtonTR;
+- (void)hideButtonTR;
+- (void)showButtonML;
+- (void)hideButtonML;
+- (void)showButtonMid;
+- (void)hideButtonMid;
+- (void)showButtonMR;
+- (void)hideButtonMR;
+- (void)showButtonBL;
+- (void)hideButtonBL;
+- (void)showButtonBM;
+- (void)hideButtonBM;
+- (void)showButtonBR;
+- (void)hideButtonBR;
+- (void)changeShow;
+- (void)hideButtons;
+- (void)changeHide;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController * _Nonnull)controller;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC11group8alpha22wafbasicViewController")
 @interface wafbasicViewController : UIViewController <UIAdaptivePresentationControllerDelegate, UIPopoverPresentationControllerDelegate>
@@ -241,6 +415,7 @@ SWIFT_CLASS("_TtC11group8alpha22wafbasicViewController")
 @property (nonatomic) NSInteger level;
 @property (nonatomic) BOOL lost;
 @property (nonatomic) NSInteger miss;
+@property (nonatomic) BOOL running;
 @property (nonatomic) uint32_t hideTime;
 @property (nonatomic) double showTime;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified scoreLabel;

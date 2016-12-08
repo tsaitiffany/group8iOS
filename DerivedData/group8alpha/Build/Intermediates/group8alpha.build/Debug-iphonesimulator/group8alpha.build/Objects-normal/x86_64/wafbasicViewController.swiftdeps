@@ -6,117 +6,110 @@ provides-nominal:
 provides-member:
 - ["C11group8alpha22wafbasicViewController", ""]
 provides-dynamic-lookup:
-- "changeShow"
-- "miss"
-- "b21"
-- "showButton22"
-- "button02"
-- "showButton11"
-- "timer12a"
-- "timer11b"
-- "lost"
-- "showButton02"
-- "timer12b"
-- "hideButton02"
-- "hideTime"
-- "b22"
-- "timer00a"
-- "button11"
-- "showButton20"
-- "showButton"
-- "hideButton"
-- "showTime"
-- "timer00b"
-- "prepareForSegue"
-- "timer20a"
-- "hideButton10"
-- "b00"
-- "timer01a"
-- "button12"
-- "missBtn"
-- "timer21a"
-- "hideButton12"
-- "timer20b"
-- "scoreLabel"
-- "timer01b"
-- "hideButton21"
-- "b01"
-- "timer21b"
 - "button21"
-- "missLabel"
-- "runGame"
-- "button01"
-- "adaptivePresentationStyleForPresentationController"
-- "showButton21"
-- "showButton01"
-- "b02"
-- "timer02a"
-- "showButton10"
-- "didReceiveMemoryWarning"
+- "b01"
 - "lvlLabel"
-- "timer02b"
+- "b00"
+- "showButton11"
 - "addPoints"
-- "timer22b"
+- "timer01b"
+- "timer21a"
 - "button00"
-- "hideButton01"
-- "b10"
-- "timer22a"
-- "button10"
-- "showButton12"
-- "viewDidLoad"
-- "b11"
-- "timer10a"
-- "score"
-- "timer10b"
+- "running"
+- "timer20b"
+- "b02"
+- "timer00b"
+- "showButton20"
+- "timer01a"
 - "changeHide"
-- "b12"
-- "hideButton11"
 - "button20"
+- "viewDidLoad"
+- "scoreLabel"
+- "showButton22"
 - "hideButton22"
-- "b20"
-- "level"
-- "button22"
+- "hideButton11"
 - "hideButton20"
+- "timer20a"
+- "showButton01"
+- "button01"
+- "timer00a"
+- "timer12b"
+- "b10"
+- "timer12a"
+- "hideButton01"
+- "b12"
+- "didReceiveMemoryWarning"
+- "b11"
+- "hideTime"
+- "adaptivePresentationStyleForPresentationController"
+- "button02"
+- "timer11b"
+- "b20"
+- "showButton21"
+- "miss"
+- "showButton10"
+- "showTime"
 - "timer11a"
+- "missBtn"
+- "showButton12"
+- "button12"
+- "changeShow"
+- "b21"
+- "runGame"
+- "timer10b"
+- "lost"
+- "showButton"
+- "hideButton21"
+- "hideButton12"
+- "hideButton02"
+- "hideButton10"
+- "button22"
+- "timer10a"
+- "timer02b"
+- "button10"
+- "timer22b"
+- "b22"
+- "timer22a"
+- "hideButton"
+- "score"
+- "level"
+- "button11"
+- "missLabel"
+- "prepareForSegue"
+- "timer21b"
+- "showButton02"
+- "timer02a"
 depends-top-level:
-- !private "UIPopoverArrowDirection"
-- !private "String"
-- !private "CGRectGetMidY"
-- !private "+="
-- "UILabel"
-- "BooleanLiteralType"
-- "UIViewController"
-- "Double"
-- "AnyObject"
-- "UIPopoverPresentationControllerDelegate"
-- !private "%"
-- "Bool"
 - "NSTimer"
 - "UIButton"
-- !private "PauseViewController"
-- "UInt32"
-- "UIModalPresentationStyle"
-- !private "CGRectMake"
-- !private "StringLiteralType"
-- !private "+"
-- !private "-"
+- !private "String"
+- "Bool"
 - !private "=="
-- "Int"
-- "UIPresentationController"
-- !private "CGRectGetMidX"
-- "UIStoryboardSegue"
+- !private "+"
+- !private "StringLiteralType"
+- "UILabel"
 - "wafbasicViewController"
+- "AnyObject"
+- "Double"
+- "UIStoryboardSegue"
+- "UIModalPresentationStyle"
+- "UIViewController"
 - !private "arc4random_uniform"
+- "UIPresentationController"
+- "UInt32"
+- !private "-"
+- "UIPopoverPresentationControllerDelegate"
+- "Int"
+- "BooleanLiteralType"
+- !private "PauseViewController"
+- !private "+="
+- !private "%"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
-- !private ["Ps9AnyObject", "CGRectGetMidX"]
-- !private ["Ps9AnyObject", "CGRectGetMidY"]
-- !private ["Ps9AnyObject", "CGRectMake"]
 - !private ["Ps9AnyObject", "Double"]
 - ["Ps9AnyObject", "NSTimer"]
 - !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "UIModalPresentationStyle"]
-- !private ["Ps9AnyObject", "UIPopoverArrowDirection"]
 - ["Ps9AnyObject", "adaptivePresentationStyleForPresentationController"]
 - ["Ps9AnyObject", "addPoints"]
 - !private ["Ps9AnyObject", "arc4random_uniform"]
@@ -129,7 +122,6 @@ depends-member:
 - ["Ps9AnyObject", "b20"]
 - ["Ps9AnyObject", "b21"]
 - ["Ps9AnyObject", "b22"]
-- !private ["Ps9AnyObject", "bounds"]
 - ["Ps9AnyObject", "button00"]
 - ["Ps9AnyObject", "button01"]
 - ["Ps9AnyObject", "button02"]
@@ -141,7 +133,6 @@ depends-member:
 - ["Ps9AnyObject", "button22"]
 - ["Ps9AnyObject", "changeHide"]
 - ["Ps9AnyObject", "changeShow"]
-- !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "destinationViewController"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "hidden"]
@@ -164,8 +155,6 @@ depends-member:
 - ["Ps9AnyObject", "miss"]
 - ["Ps9AnyObject", "missBtn"]
 - ["Ps9AnyObject", "missLabel"]
-- !private ["Ps9AnyObject", "modalPresentationStyle"]
-- !private ["Ps9AnyObject", "permittedArrowDirections"]
 - ["Ps9AnyObject", "popoverPresentationController"]
 - ["Ps9AnyObject", "popoverPresentationControllerDidDismissPopover"]
 - ["Ps9AnyObject", "popoverPresentationControllerShouldDismissPopover"]
@@ -173,6 +162,7 @@ depends-member:
 - ["Ps9AnyObject", "prepareForSegue"]
 - ["Ps9AnyObject", "presentationController"]
 - ["Ps9AnyObject", "runGame"]
+- ["Ps9AnyObject", "running"]
 - !private ["Ps9AnyObject", "scheduledTimerWithTimeInterval"]
 - ["Ps9AnyObject", "score"]
 - ["Ps9AnyObject", "scoreLabel"]
@@ -187,8 +177,6 @@ depends-member:
 - ["Ps9AnyObject", "showButton21"]
 - ["Ps9AnyObject", "showButton22"]
 - ["Ps9AnyObject", "showTime"]
-- !private ["Ps9AnyObject", "sourceRect"]
-- !private ["Ps9AnyObject", "sourceView"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "timer00a"]
 - ["Ps9AnyObject", "timer00b"]
@@ -209,27 +197,20 @@ depends-member:
 - ["Ps9AnyObject", "timer22a"]
 - ["Ps9AnyObject", "timer22b"]
 - !private ["Ps9AnyObject", "tolerance"]
-- !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - !private ["Ps9AnyObject", "wafbasicViewController"]
 - ["Ps9AnyObject", ""]
-- !private ["Ps23ArrayLiteralConvertible", "init"]
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
-- !private ["V12CoreGraphics7CGFloat", "deinit"]
-- !private ["Ps11CVarArgType", "CGRectGetMidX"]
-- !private ["Ps11CVarArgType", "CGRectGetMidY"]
-- !private ["Ps11CVarArgType", "CGRectMake"]
 - !private ["Ps11CVarArgType", "Double"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - ["Ps11CVarArgType", "NSTimer"]
 - !private ["Ps11CVarArgType", "String"]
 - !private ["Ps11CVarArgType", "UIModalPresentationStyle"]
-- !private ["Ps11CVarArgType", "UIPopoverArrowDirection"]
 - ["Ps11CVarArgType", "adaptivePresentationStyleForPresentationController"]
 - ["Ps11CVarArgType", "addPoints"]
 - !private ["Ps11CVarArgType", "arc4random_uniform"]
@@ -242,7 +223,6 @@ depends-member:
 - ["Ps11CVarArgType", "b20"]
 - ["Ps11CVarArgType", "b21"]
 - ["Ps11CVarArgType", "b22"]
-- !private ["Ps11CVarArgType", "bounds"]
 - ["Ps11CVarArgType", "button00"]
 - ["Ps11CVarArgType", "button01"]
 - ["Ps11CVarArgType", "button02"]
@@ -254,7 +234,6 @@ depends-member:
 - ["Ps11CVarArgType", "button22"]
 - ["Ps11CVarArgType", "changeHide"]
 - ["Ps11CVarArgType", "changeShow"]
-- !private ["Ps11CVarArgType", "delegate"]
 - !private ["Ps11CVarArgType", "destinationViewController"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
 - !private ["Ps11CVarArgType", "hidden"]
@@ -277,8 +256,6 @@ depends-member:
 - ["Ps11CVarArgType", "miss"]
 - ["Ps11CVarArgType", "missBtn"]
 - ["Ps11CVarArgType", "missLabel"]
-- !private ["Ps11CVarArgType", "modalPresentationStyle"]
-- !private ["Ps11CVarArgType", "permittedArrowDirections"]
 - ["Ps11CVarArgType", "popoverPresentationController"]
 - ["Ps11CVarArgType", "popoverPresentationControllerDidDismissPopover"]
 - ["Ps11CVarArgType", "popoverPresentationControllerShouldDismissPopover"]
@@ -286,6 +263,7 @@ depends-member:
 - ["Ps11CVarArgType", "prepareForSegue"]
 - ["Ps11CVarArgType", "presentationController"]
 - ["Ps11CVarArgType", "runGame"]
+- ["Ps11CVarArgType", "running"]
 - !private ["Ps11CVarArgType", "scheduledTimerWithTimeInterval"]
 - ["Ps11CVarArgType", "score"]
 - ["Ps11CVarArgType", "scoreLabel"]
@@ -300,8 +278,6 @@ depends-member:
 - ["Ps11CVarArgType", "showButton21"]
 - ["Ps11CVarArgType", "showButton22"]
 - ["Ps11CVarArgType", "showTime"]
-- !private ["Ps11CVarArgType", "sourceRect"]
-- !private ["Ps11CVarArgType", "sourceView"]
 - !private ["Ps11CVarArgType", "text"]
 - ["Ps11CVarArgType", "timer00a"]
 - ["Ps11CVarArgType", "timer00b"]
@@ -322,22 +298,16 @@ depends-member:
 - ["Ps11CVarArgType", "timer22a"]
 - ["Ps11CVarArgType", "timer22b"]
 - !private ["Ps11CVarArgType", "tolerance"]
-- !private ["Ps11CVarArgType", "view"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - !private ["Ps11CVarArgType", "wafbasicViewController"]
 - ["Ps11CVarArgType", ""]
 - !private ["Vs9Character", "deinit"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "CGRectGetMidX"]
-- !private ["Ps28CustomDebugStringConvertible", "CGRectGetMidY"]
-- !private ["Ps28CustomDebugStringConvertible", "CGRectMake"]
 - !private ["Ps28CustomDebugStringConvertible", "Double"]
 - ["Ps28CustomDebugStringConvertible", "NSTimer"]
-- ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "UIModalPresentationStyle"]
-- !private ["Ps28CustomDebugStringConvertible", "UIPopoverArrowDirection"]
 - ["Ps28CustomDebugStringConvertible", "adaptivePresentationStyleForPresentationController"]
 - ["Ps28CustomDebugStringConvertible", "addPoints"]
 - !private ["Ps28CustomDebugStringConvertible", "arc4random_uniform"]
@@ -350,7 +320,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "b20"]
 - ["Ps28CustomDebugStringConvertible", "b21"]
 - ["Ps28CustomDebugStringConvertible", "b22"]
-- !private ["Ps28CustomDebugStringConvertible", "bounds"]
 - ["Ps28CustomDebugStringConvertible", "button00"]
 - ["Ps28CustomDebugStringConvertible", "button01"]
 - ["Ps28CustomDebugStringConvertible", "button02"]
@@ -362,7 +331,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "button22"]
 - ["Ps28CustomDebugStringConvertible", "changeHide"]
 - ["Ps28CustomDebugStringConvertible", "changeShow"]
-- !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "destinationViewController"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "hidden"]
@@ -385,8 +353,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "miss"]
 - ["Ps28CustomDebugStringConvertible", "missBtn"]
 - ["Ps28CustomDebugStringConvertible", "missLabel"]
-- !private ["Ps28CustomDebugStringConvertible", "modalPresentationStyle"]
-- !private ["Ps28CustomDebugStringConvertible", "permittedArrowDirections"]
 - ["Ps28CustomDebugStringConvertible", "popoverPresentationController"]
 - ["Ps28CustomDebugStringConvertible", "popoverPresentationControllerDidDismissPopover"]
 - ["Ps28CustomDebugStringConvertible", "popoverPresentationControllerShouldDismissPopover"]
@@ -394,6 +360,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "prepareForSegue"]
 - ["Ps28CustomDebugStringConvertible", "presentationController"]
 - ["Ps28CustomDebugStringConvertible", "runGame"]
+- ["Ps28CustomDebugStringConvertible", "running"]
 - !private ["Ps28CustomDebugStringConvertible", "scheduledTimerWithTimeInterval"]
 - ["Ps28CustomDebugStringConvertible", "score"]
 - ["Ps28CustomDebugStringConvertible", "scoreLabel"]
@@ -408,8 +375,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "showButton21"]
 - ["Ps28CustomDebugStringConvertible", "showButton22"]
 - ["Ps28CustomDebugStringConvertible", "showTime"]
-- !private ["Ps28CustomDebugStringConvertible", "sourceRect"]
-- !private ["Ps28CustomDebugStringConvertible", "sourceView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "timer00a"]
 - ["Ps28CustomDebugStringConvertible", "timer00b"]
@@ -430,19 +395,14 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "timer22a"]
 - ["Ps28CustomDebugStringConvertible", "timer22b"]
 - !private ["Ps28CustomDebugStringConvertible", "tolerance"]
-- !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - !private ["Ps28CustomDebugStringConvertible", "wafbasicViewController"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps23CustomStringConvertible", "CGRectGetMidX"]
-- !private ["Ps23CustomStringConvertible", "CGRectGetMidY"]
-- !private ["Ps23CustomStringConvertible", "CGRectMake"]
 - !private ["Ps23CustomStringConvertible", "Double"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - ["Ps23CustomStringConvertible", "NSTimer"]
 - !private ["Ps23CustomStringConvertible", "String"]
 - !private ["Ps23CustomStringConvertible", "UIModalPresentationStyle"]
-- !private ["Ps23CustomStringConvertible", "UIPopoverArrowDirection"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps23CustomStringConvertible", "adaptivePresentationStyleForPresentationController"]
 - ["Ps23CustomStringConvertible", "addPoints"]
@@ -456,7 +416,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "b20"]
 - ["Ps23CustomStringConvertible", "b21"]
 - ["Ps23CustomStringConvertible", "b22"]
-- !private ["Ps23CustomStringConvertible", "bounds"]
 - ["Ps23CustomStringConvertible", "button00"]
 - ["Ps23CustomStringConvertible", "button01"]
 - ["Ps23CustomStringConvertible", "button02"]
@@ -468,7 +427,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "button22"]
 - ["Ps23CustomStringConvertible", "changeHide"]
 - ["Ps23CustomStringConvertible", "changeShow"]
-- !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "destinationViewController"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "hidden"]
@@ -491,8 +449,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "miss"]
 - ["Ps23CustomStringConvertible", "missBtn"]
 - ["Ps23CustomStringConvertible", "missLabel"]
-- !private ["Ps23CustomStringConvertible", "modalPresentationStyle"]
-- !private ["Ps23CustomStringConvertible", "permittedArrowDirections"]
 - ["Ps23CustomStringConvertible", "popoverPresentationController"]
 - ["Ps23CustomStringConvertible", "popoverPresentationControllerDidDismissPopover"]
 - ["Ps23CustomStringConvertible", "popoverPresentationControllerShouldDismissPopover"]
@@ -500,6 +456,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "prepareForSegue"]
 - ["Ps23CustomStringConvertible", "presentationController"]
 - ["Ps23CustomStringConvertible", "runGame"]
+- ["Ps23CustomStringConvertible", "running"]
 - !private ["Ps23CustomStringConvertible", "scheduledTimerWithTimeInterval"]
 - ["Ps23CustomStringConvertible", "score"]
 - ["Ps23CustomStringConvertible", "scoreLabel"]
@@ -514,8 +471,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "showButton21"]
 - ["Ps23CustomStringConvertible", "showButton22"]
 - ["Ps23CustomStringConvertible", "showTime"]
-- !private ["Ps23CustomStringConvertible", "sourceRect"]
-- !private ["Ps23CustomStringConvertible", "sourceView"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "timer00a"]
 - ["Ps23CustomStringConvertible", "timer00b"]
@@ -536,23 +491,17 @@ depends-member:
 - ["Ps23CustomStringConvertible", "timer22a"]
 - ["Ps23CustomStringConvertible", "timer22b"]
 - !private ["Ps23CustomStringConvertible", "tolerance"]
-- !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - !private ["Ps23CustomStringConvertible", "wafbasicViewController"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Sd", "deinit"]
 - !private ["Sd", "init"]
-- !private ["Ps9Equatable", "CGRectGetMidX"]
-- !private ["Ps9Equatable", "CGRectGetMidY"]
-- !private ["Ps9Equatable", "CGRectMake"]
 - !private ["Ps9Equatable", "Double"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - ["Ps9Equatable", "NSTimer"]
 - !private ["Ps9Equatable", "None"]
-- !private ["Ps9Equatable", "Popover"]
 - !private ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "UIModalPresentationStyle"]
-- !private ["Ps9Equatable", "UIPopoverArrowDirection"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "adaptivePresentationStyleForPresentationController"]
 - ["Ps9Equatable", "addPoints"]
@@ -566,7 +515,6 @@ depends-member:
 - ["Ps9Equatable", "b20"]
 - ["Ps9Equatable", "b21"]
 - ["Ps9Equatable", "b22"]
-- !private ["Ps9Equatable", "bounds"]
 - ["Ps9Equatable", "button00"]
 - ["Ps9Equatable", "button01"]
 - ["Ps9Equatable", "button02"]
@@ -578,7 +526,6 @@ depends-member:
 - ["Ps9Equatable", "button22"]
 - ["Ps9Equatable", "changeHide"]
 - ["Ps9Equatable", "changeShow"]
-- !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "destinationViewController"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "hidden"]
@@ -601,8 +548,6 @@ depends-member:
 - ["Ps9Equatable", "miss"]
 - ["Ps9Equatable", "missBtn"]
 - ["Ps9Equatable", "missLabel"]
-- !private ["Ps9Equatable", "modalPresentationStyle"]
-- !private ["Ps9Equatable", "permittedArrowDirections"]
 - ["Ps9Equatable", "popoverPresentationController"]
 - ["Ps9Equatable", "popoverPresentationControllerDidDismissPopover"]
 - ["Ps9Equatable", "popoverPresentationControllerShouldDismissPopover"]
@@ -610,6 +555,7 @@ depends-member:
 - ["Ps9Equatable", "prepareForSegue"]
 - ["Ps9Equatable", "presentationController"]
 - ["Ps9Equatable", "runGame"]
+- ["Ps9Equatable", "running"]
 - !private ["Ps9Equatable", "scheduledTimerWithTimeInterval"]
 - ["Ps9Equatable", "score"]
 - ["Ps9Equatable", "scoreLabel"]
@@ -624,8 +570,6 @@ depends-member:
 - ["Ps9Equatable", "showButton21"]
 - ["Ps9Equatable", "showButton22"]
 - ["Ps9Equatable", "showTime"]
-- !private ["Ps9Equatable", "sourceRect"]
-- !private ["Ps9Equatable", "sourceView"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "timer00a"]
 - ["Ps9Equatable", "timer00b"]
@@ -646,7 +590,6 @@ depends-member:
 - ["Ps9Equatable", "timer22a"]
 - ["Ps9Equatable", "timer22b"]
 - !private ["Ps9Equatable", "tolerance"]
-- !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "wafbasicViewController"]
 - ["Ps9Equatable", ""]
@@ -655,17 +598,12 @@ depends-member:
 - !private ["Ps23FloatLiteralConvertible", "init"]
 - !private ["Ps17FloatingPointType", "init"]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
-- !private ["Ps8Hashable", "CGRectGetMidX"]
-- !private ["Ps8Hashable", "CGRectGetMidY"]
-- !private ["Ps8Hashable", "CGRectMake"]
 - !private ["Ps8Hashable", "Double"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - ["Ps8Hashable", "NSTimer"]
 - !private ["Ps8Hashable", "None"]
-- !private ["Ps8Hashable", "Popover"]
 - !private ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "UIModalPresentationStyle"]
-- !private ["Ps8Hashable", "UIPopoverArrowDirection"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "adaptivePresentationStyleForPresentationController"]
 - ["Ps8Hashable", "addPoints"]
@@ -679,7 +617,6 @@ depends-member:
 - ["Ps8Hashable", "b20"]
 - ["Ps8Hashable", "b21"]
 - ["Ps8Hashable", "b22"]
-- !private ["Ps8Hashable", "bounds"]
 - ["Ps8Hashable", "button00"]
 - ["Ps8Hashable", "button01"]
 - ["Ps8Hashable", "button02"]
@@ -691,7 +628,6 @@ depends-member:
 - ["Ps8Hashable", "button22"]
 - ["Ps8Hashable", "changeHide"]
 - ["Ps8Hashable", "changeShow"]
-- !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "destinationViewController"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "hidden"]
@@ -714,8 +650,6 @@ depends-member:
 - ["Ps8Hashable", "miss"]
 - ["Ps8Hashable", "missBtn"]
 - ["Ps8Hashable", "missLabel"]
-- !private ["Ps8Hashable", "modalPresentationStyle"]
-- !private ["Ps8Hashable", "permittedArrowDirections"]
 - ["Ps8Hashable", "popoverPresentationController"]
 - ["Ps8Hashable", "popoverPresentationControllerDidDismissPopover"]
 - ["Ps8Hashable", "popoverPresentationControllerShouldDismissPopover"]
@@ -723,6 +657,7 @@ depends-member:
 - ["Ps8Hashable", "prepareForSegue"]
 - ["Ps8Hashable", "presentationController"]
 - ["Ps8Hashable", "runGame"]
+- ["Ps8Hashable", "running"]
 - !private ["Ps8Hashable", "scheduledTimerWithTimeInterval"]
 - ["Ps8Hashable", "score"]
 - ["Ps8Hashable", "scoreLabel"]
@@ -737,8 +672,6 @@ depends-member:
 - ["Ps8Hashable", "showButton21"]
 - ["Ps8Hashable", "showButton22"]
 - ["Ps8Hashable", "showTime"]
-- !private ["Ps8Hashable", "sourceRect"]
-- !private ["Ps8Hashable", "sourceView"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "timer00a"]
 - ["Ps8Hashable", "timer00b"]
@@ -759,7 +692,6 @@ depends-member:
 - ["Ps8Hashable", "timer22a"]
 - ["Ps8Hashable", "timer22b"]
 - !private ["Ps8Hashable", "tolerance"]
-- !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - !private ["Ps8Hashable", "wafbasicViewController"]
 - ["Ps8Hashable", ""]
@@ -775,14 +707,10 @@ depends-member:
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "init"]
-- !private ["PSo8NSCoding", "CGRectGetMidX"]
-- !private ["PSo8NSCoding", "CGRectGetMidY"]
-- !private ["PSo8NSCoding", "CGRectMake"]
 - !private ["PSo8NSCoding", "Double"]
 - ["PSo8NSCoding", "NSTimer"]
 - !private ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIModalPresentationStyle"]
-- !private ["PSo8NSCoding", "UIPopoverArrowDirection"]
 - ["PSo8NSCoding", "adaptivePresentationStyleForPresentationController"]
 - ["PSo8NSCoding", "addPoints"]
 - !private ["PSo8NSCoding", "arc4random_uniform"]
@@ -795,7 +723,6 @@ depends-member:
 - ["PSo8NSCoding", "b20"]
 - ["PSo8NSCoding", "b21"]
 - ["PSo8NSCoding", "b22"]
-- !private ["PSo8NSCoding", "bounds"]
 - ["PSo8NSCoding", "button00"]
 - ["PSo8NSCoding", "button01"]
 - ["PSo8NSCoding", "button02"]
@@ -827,7 +754,6 @@ depends-member:
 - ["PSo8NSCoding", "miss"]
 - ["PSo8NSCoding", "missBtn"]
 - ["PSo8NSCoding", "missLabel"]
-- !private ["PSo8NSCoding", "modalPresentationStyle"]
 - ["PSo8NSCoding", "popoverPresentationController"]
 - ["PSo8NSCoding", "popoverPresentationControllerDidDismissPopover"]
 - ["PSo8NSCoding", "popoverPresentationControllerShouldDismissPopover"]
@@ -835,6 +761,7 @@ depends-member:
 - ["PSo8NSCoding", "prepareForSegue"]
 - ["PSo8NSCoding", "presentationController"]
 - ["PSo8NSCoding", "runGame"]
+- ["PSo8NSCoding", "running"]
 - ["PSo8NSCoding", "score"]
 - ["PSo8NSCoding", "scoreLabel"]
 - !private ["PSo8NSCoding", "scoreP"]
@@ -867,19 +794,14 @@ depends-member:
 - ["PSo8NSCoding", "timer21b"]
 - ["PSo8NSCoding", "timer22a"]
 - ["PSo8NSCoding", "timer22b"]
-- !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - !private ["PSo8NSCoding", "wafbasicViewController"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "CGRectGetMidX"]
-- !private ["PSo26NSExtensionRequestHandling", "CGRectGetMidY"]
-- !private ["PSo26NSExtensionRequestHandling", "CGRectMake"]
 - !private ["PSo26NSExtensionRequestHandling", "Double"]
 - ["PSo26NSExtensionRequestHandling", "NSTimer"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UIModalPresentationStyle"]
-- !private ["PSo26NSExtensionRequestHandling", "UIPopoverArrowDirection"]
 - ["PSo26NSExtensionRequestHandling", "adaptivePresentationStyleForPresentationController"]
 - ["PSo26NSExtensionRequestHandling", "addPoints"]
 - !private ["PSo26NSExtensionRequestHandling", "arc4random_uniform"]
@@ -922,7 +844,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "miss"]
 - ["PSo26NSExtensionRequestHandling", "missBtn"]
 - ["PSo26NSExtensionRequestHandling", "missLabel"]
-- !private ["PSo26NSExtensionRequestHandling", "modalPresentationStyle"]
 - ["PSo26NSExtensionRequestHandling", "popoverPresentationController"]
 - ["PSo26NSExtensionRequestHandling", "popoverPresentationControllerDidDismissPopover"]
 - ["PSo26NSExtensionRequestHandling", "popoverPresentationControllerShouldDismissPopover"]
@@ -930,6 +851,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "prepareForSegue"]
 - ["PSo26NSExtensionRequestHandling", "presentationController"]
 - ["PSo26NSExtensionRequestHandling", "runGame"]
+- ["PSo26NSExtensionRequestHandling", "running"]
 - ["PSo26NSExtensionRequestHandling", "score"]
 - ["PSo26NSExtensionRequestHandling", "scoreLabel"]
 - !private ["PSo26NSExtensionRequestHandling", "scoreP"]
@@ -961,16 +883,12 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "timer21b"]
 - ["PSo26NSExtensionRequestHandling", "timer22a"]
 - ["PSo26NSExtensionRequestHandling", "timer22b"]
-- !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - !private ["PSo26NSExtensionRequestHandling", "wafbasicViewController"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
-- !private ["CSo8NSObject", "CGRectGetMidX"]
-- !private ["CSo8NSObject", "CGRectGetMidY"]
-- !private ["CSo8NSObject", "CGRectMake"]
 - ["CSo8NSObject", "Double"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "NSTimer"]
@@ -979,7 +897,6 @@ depends-member:
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIModalPresentationStyle"]
-- !private ["CSo8NSObject", "UIPopoverArrowDirection"]
 - ["CSo8NSObject", "UIPresentationController"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UInt32"]
@@ -995,7 +912,6 @@ depends-member:
 - ["CSo8NSObject", "b20"]
 - ["CSo8NSObject", "b21"]
 - ["CSo8NSObject", "b22"]
-- !private ["CSo8NSObject", "bounds"]
 - ["CSo8NSObject", "button00"]
 - ["CSo8NSObject", "button01"]
 - ["CSo8NSObject", "button02"]
@@ -1007,7 +923,6 @@ depends-member:
 - ["CSo8NSObject", "button22"]
 - ["CSo8NSObject", "changeHide"]
 - ["CSo8NSObject", "changeShow"]
-- !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "destinationViewController"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "hidden"]
@@ -1030,8 +945,6 @@ depends-member:
 - ["CSo8NSObject", "miss"]
 - ["CSo8NSObject", "missBtn"]
 - ["CSo8NSObject", "missLabel"]
-- !private ["CSo8NSObject", "modalPresentationStyle"]
-- !private ["CSo8NSObject", "permittedArrowDirections"]
 - ["CSo8NSObject", "popoverPresentationController"]
 - ["CSo8NSObject", "popoverPresentationControllerDidDismissPopover"]
 - ["CSo8NSObject", "popoverPresentationControllerShouldDismissPopover"]
@@ -1039,6 +952,7 @@ depends-member:
 - ["CSo8NSObject", "prepareForSegue"]
 - ["CSo8NSObject", "presentationController"]
 - ["CSo8NSObject", "runGame"]
+- ["CSo8NSObject", "running"]
 - !private ["CSo8NSObject", "scheduledTimerWithTimeInterval"]
 - ["CSo8NSObject", "score"]
 - ["CSo8NSObject", "scoreLabel"]
@@ -1053,8 +967,6 @@ depends-member:
 - ["CSo8NSObject", "showButton21"]
 - ["CSo8NSObject", "showButton22"]
 - ["CSo8NSObject", "showTime"]
-- !private ["CSo8NSObject", "sourceRect"]
-- !private ["CSo8NSObject", "sourceView"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "timer00a"]
 - ["CSo8NSObject", "timer00b"]
@@ -1075,17 +987,12 @@ depends-member:
 - ["CSo8NSObject", "timer22a"]
 - ["CSo8NSObject", "timer22b"]
 - !private ["CSo8NSObject", "tolerance"]
-- !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["CSo8NSObject", "wafbasicViewController"]
-- !private ["PSo16NSObjectProtocol", "CGRectGetMidX"]
-- !private ["PSo16NSObjectProtocol", "CGRectGetMidY"]
-- !private ["PSo16NSObjectProtocol", "CGRectMake"]
 - !private ["PSo16NSObjectProtocol", "Double"]
 - ["PSo16NSObjectProtocol", "NSTimer"]
 - !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIModalPresentationStyle"]
-- !private ["PSo16NSObjectProtocol", "UIPopoverArrowDirection"]
 - ["PSo16NSObjectProtocol", "adaptivePresentationStyleForPresentationController"]
 - ["PSo16NSObjectProtocol", "addPoints"]
 - !private ["PSo16NSObjectProtocol", "arc4random_uniform"]
@@ -1098,7 +1005,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "b20"]
 - ["PSo16NSObjectProtocol", "b21"]
 - ["PSo16NSObjectProtocol", "b22"]
-- !private ["PSo16NSObjectProtocol", "bounds"]
 - ["PSo16NSObjectProtocol", "button00"]
 - ["PSo16NSObjectProtocol", "button01"]
 - ["PSo16NSObjectProtocol", "button02"]
@@ -1110,7 +1016,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "button22"]
 - ["PSo16NSObjectProtocol", "changeHide"]
 - ["PSo16NSObjectProtocol", "changeShow"]
-- !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "destinationViewController"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "hidden"]
@@ -1133,8 +1038,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "miss"]
 - ["PSo16NSObjectProtocol", "missBtn"]
 - ["PSo16NSObjectProtocol", "missLabel"]
-- !private ["PSo16NSObjectProtocol", "modalPresentationStyle"]
-- !private ["PSo16NSObjectProtocol", "permittedArrowDirections"]
 - ["PSo16NSObjectProtocol", "popoverPresentationController"]
 - ["PSo16NSObjectProtocol", "popoverPresentationControllerDidDismissPopover"]
 - ["PSo16NSObjectProtocol", "popoverPresentationControllerShouldDismissPopover"]
@@ -1142,6 +1045,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "prepareForSegue"]
 - ["PSo16NSObjectProtocol", "presentationController"]
 - ["PSo16NSObjectProtocol", "runGame"]
+- ["PSo16NSObjectProtocol", "running"]
 - !private ["PSo16NSObjectProtocol", "scheduledTimerWithTimeInterval"]
 - ["PSo16NSObjectProtocol", "score"]
 - ["PSo16NSObjectProtocol", "scoreLabel"]
@@ -1156,8 +1060,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "showButton21"]
 - ["PSo16NSObjectProtocol", "showButton22"]
 - ["PSo16NSObjectProtocol", "showTime"]
-- !private ["PSo16NSObjectProtocol", "sourceRect"]
-- !private ["PSo16NSObjectProtocol", "sourceView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "timer00a"]
 - ["PSo16NSObjectProtocol", "timer00b"]
@@ -1178,7 +1080,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "timer22a"]
 - ["PSo16NSObjectProtocol", "timer22b"]
 - !private ["PSo16NSObjectProtocol", "tolerance"]
-- !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "wafbasicViewController"]
 - ["PSo16NSObjectProtocol", ""]
@@ -1187,20 +1088,13 @@ depends-member:
 - ["CSo7NSTimer", "init"]
 - !private ["CSo7NSTimer", "scheduledTimerWithTimeInterval"]
 - !private ["CSo7NSTimer", "tolerance"]
-- ["Ps21NilLiteralConvertible", "Some"]
-- !private ["Ps13OptionSetType", "init"]
-- ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
 - !private ["C11group8alpha19PauseViewController", "levelP"]
-- !private ["C11group8alpha19PauseViewController", "modalPresentationStyle"]
-- !private ["C11group8alpha19PauseViewController", "popoverPresentationController"]
+- !private ["C11group8alpha19PauseViewController", "miss"]
 - !private ["C11group8alpha19PauseViewController", "scoreP"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["Ps16RawRepresentable", "None"]
-- !private ["Ps16RawRepresentable", "Popover"]
-- !private ["Ps16RawRepresentable", "init"]
-- !private ["Ps14SetAlgebraType", "init"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
 - !private ["Ps16SignedNumberType", "IntegerLiteralType"]
 - !private ["Ps16SignedNumberType", "init"]
@@ -1210,17 +1104,12 @@ depends-member:
 - !private ["SS", "init"]
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "init"]
-- !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - !private ["PSo29UIAccessibilityIdentification", "hidden"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
-- !private ["PSo40UIAdaptivePresentationControllerDelegate", "CGRectGetMidX"]
-- !private ["PSo40UIAdaptivePresentationControllerDelegate", "CGRectGetMidY"]
-- !private ["PSo40UIAdaptivePresentationControllerDelegate", "CGRectMake"]
 - !private ["PSo40UIAdaptivePresentationControllerDelegate", "Double"]
 - ["PSo40UIAdaptivePresentationControllerDelegate", "NSTimer"]
 - !private ["PSo40UIAdaptivePresentationControllerDelegate", "String"]
 - !private ["PSo40UIAdaptivePresentationControllerDelegate", "UIModalPresentationStyle"]
-- !private ["PSo40UIAdaptivePresentationControllerDelegate", "UIPopoverArrowDirection"]
 - ["PSo40UIAdaptivePresentationControllerDelegate", "adaptivePresentationStyleForPresentationController"]
 - !private ["PSo40UIAdaptivePresentationControllerDelegate", "addPoints"]
 - !private ["PSo40UIAdaptivePresentationControllerDelegate", "arc4random_uniform"]
@@ -1256,6 +1145,7 @@ depends-member:
 - ["PSo40UIAdaptivePresentationControllerDelegate", "prepareForPopoverPresentation"]
 - ["PSo40UIAdaptivePresentationControllerDelegate", "presentationController"]
 - !private ["PSo40UIAdaptivePresentationControllerDelegate", "runGame"]
+- !private ["PSo40UIAdaptivePresentationControllerDelegate", "running"]
 - !private ["PSo40UIAdaptivePresentationControllerDelegate", "score"]
 - !private ["PSo40UIAdaptivePresentationControllerDelegate", "scoreLabel"]
 - !private ["PSo40UIAdaptivePresentationControllerDelegate", "showButton"]
@@ -1286,20 +1176,14 @@ depends-member:
 - !private ["PSo40UIAdaptivePresentationControllerDelegate", "timer21b"]
 - !private ["PSo40UIAdaptivePresentationControllerDelegate", "timer22a"]
 - !private ["PSo40UIAdaptivePresentationControllerDelegate", "timer22b"]
-- !private ["PSo40UIAdaptivePresentationControllerDelegate", "view"]
 - !private ["PSo40UIAdaptivePresentationControllerDelegate", "wafbasicViewController"]
 - ["PSo40UIAdaptivePresentationControllerDelegate", ""]
-- !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo12UIAppearance", "hidden"]
 - !private ["PSo12UIAppearance", "text"]
-- !private ["PSo21UIAppearanceContainer", "CGRectGetMidX"]
-- !private ["PSo21UIAppearanceContainer", "CGRectGetMidY"]
-- !private ["PSo21UIAppearanceContainer", "CGRectMake"]
 - !private ["PSo21UIAppearanceContainer", "Double"]
 - ["PSo21UIAppearanceContainer", "NSTimer"]
 - !private ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIModalPresentationStyle"]
-- !private ["PSo21UIAppearanceContainer", "UIPopoverArrowDirection"]
 - ["PSo21UIAppearanceContainer", "adaptivePresentationStyleForPresentationController"]
 - ["PSo21UIAppearanceContainer", "addPoints"]
 - !private ["PSo21UIAppearanceContainer", "arc4random_uniform"]
@@ -1312,7 +1196,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "b20"]
 - ["PSo21UIAppearanceContainer", "b21"]
 - ["PSo21UIAppearanceContainer", "b22"]
-- !private ["PSo21UIAppearanceContainer", "bounds"]
 - ["PSo21UIAppearanceContainer", "button00"]
 - ["PSo21UIAppearanceContainer", "button01"]
 - ["PSo21UIAppearanceContainer", "button02"]
@@ -1324,7 +1207,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "button22"]
 - ["PSo21UIAppearanceContainer", "changeHide"]
 - ["PSo21UIAppearanceContainer", "changeShow"]
-- !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "hidden"]
 - ["PSo21UIAppearanceContainer", "hideButton"]
@@ -1345,8 +1227,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "miss"]
 - ["PSo21UIAppearanceContainer", "missBtn"]
 - ["PSo21UIAppearanceContainer", "missLabel"]
-- !private ["PSo21UIAppearanceContainer", "modalPresentationStyle"]
-- !private ["PSo21UIAppearanceContainer", "permittedArrowDirections"]
 - ["PSo21UIAppearanceContainer", "popoverPresentationController"]
 - ["PSo21UIAppearanceContainer", "popoverPresentationControllerDidDismissPopover"]
 - ["PSo21UIAppearanceContainer", "popoverPresentationControllerShouldDismissPopover"]
@@ -1354,6 +1234,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "prepareForSegue"]
 - ["PSo21UIAppearanceContainer", "presentationController"]
 - ["PSo21UIAppearanceContainer", "runGame"]
+- ["PSo21UIAppearanceContainer", "running"]
 - ["PSo21UIAppearanceContainer", "score"]
 - ["PSo21UIAppearanceContainer", "scoreLabel"]
 - !private ["PSo21UIAppearanceContainer", "scoreP"]
@@ -1367,8 +1248,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "showButton21"]
 - ["PSo21UIAppearanceContainer", "showButton22"]
 - ["PSo21UIAppearanceContainer", "showTime"]
-- !private ["PSo21UIAppearanceContainer", "sourceRect"]
-- !private ["PSo21UIAppearanceContainer", "sourceView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "timer00a"]
 - ["PSo21UIAppearanceContainer", "timer00b"]
@@ -1388,19 +1267,14 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "timer21b"]
 - ["PSo21UIAppearanceContainer", "timer22a"]
 - ["PSo21UIAppearanceContainer", "timer22b"]
-- !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - !private ["PSo21UIAppearanceContainer", "wafbasicViewController"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo8UIButton", "hidden"]
-- !private ["PSo18UIContentContainer", "CGRectGetMidX"]
-- !private ["PSo18UIContentContainer", "CGRectGetMidY"]
-- !private ["PSo18UIContentContainer", "CGRectMake"]
 - !private ["PSo18UIContentContainer", "Double"]
 - ["PSo18UIContentContainer", "NSTimer"]
 - !private ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UIModalPresentationStyle"]
-- !private ["PSo18UIContentContainer", "UIPopoverArrowDirection"]
 - ["PSo18UIContentContainer", "adaptivePresentationStyleForPresentationController"]
 - ["PSo18UIContentContainer", "addPoints"]
 - !private ["PSo18UIContentContainer", "arc4random_uniform"]
@@ -1424,7 +1298,6 @@ depends-member:
 - ["PSo18UIContentContainer", "button22"]
 - ["PSo18UIContentContainer", "changeHide"]
 - ["PSo18UIContentContainer", "changeShow"]
-- !private ["PSo18UIContentContainer", "delegate"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "hideButton"]
 - ["PSo18UIContentContainer", "hideButton01"]
@@ -1444,8 +1317,6 @@ depends-member:
 - ["PSo18UIContentContainer", "miss"]
 - ["PSo18UIContentContainer", "missBtn"]
 - ["PSo18UIContentContainer", "missLabel"]
-- !private ["PSo18UIContentContainer", "modalPresentationStyle"]
-- !private ["PSo18UIContentContainer", "permittedArrowDirections"]
 - ["PSo18UIContentContainer", "popoverPresentationController"]
 - ["PSo18UIContentContainer", "popoverPresentationControllerDidDismissPopover"]
 - ["PSo18UIContentContainer", "popoverPresentationControllerShouldDismissPopover"]
@@ -1453,6 +1324,7 @@ depends-member:
 - ["PSo18UIContentContainer", "prepareForSegue"]
 - ["PSo18UIContentContainer", "presentationController"]
 - ["PSo18UIContentContainer", "runGame"]
+- ["PSo18UIContentContainer", "running"]
 - ["PSo18UIContentContainer", "score"]
 - ["PSo18UIContentContainer", "scoreLabel"]
 - !private ["PSo18UIContentContainer", "scoreP"]
@@ -1466,8 +1338,6 @@ depends-member:
 - ["PSo18UIContentContainer", "showButton21"]
 - ["PSo18UIContentContainer", "showButton22"]
 - ["PSo18UIContentContainer", "showTime"]
-- !private ["PSo18UIContentContainer", "sourceRect"]
-- !private ["PSo18UIContentContainer", "sourceView"]
 - ["PSo18UIContentContainer", "timer00a"]
 - ["PSo18UIContentContainer", "timer00b"]
 - ["PSo18UIContentContainer", "timer01a"]
@@ -1486,25 +1356,18 @@ depends-member:
 - ["PSo18UIContentContainer", "timer21b"]
 - ["PSo18UIContentContainer", "timer22a"]
 - ["PSo18UIContentContainer", "timer22b"]
-- !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - !private ["PSo18UIContentContainer", "wafbasicViewController"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "hidden"]
-- !private ["PSo17UICoordinateSpace", "bounds"]
 - !private ["PSo17UICoordinateSpace", "hidden"]
 - !private ["PSo17UICoordinateSpace", "text"]
-- !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo13UIDynamicItem", "hidden"]
 - !private ["PSo13UIDynamicItem", "text"]
-- !private ["PSo18UIFocusEnvironment", "CGRectGetMidX"]
-- !private ["PSo18UIFocusEnvironment", "CGRectGetMidY"]
-- !private ["PSo18UIFocusEnvironment", "CGRectMake"]
 - !private ["PSo18UIFocusEnvironment", "Double"]
 - ["PSo18UIFocusEnvironment", "NSTimer"]
 - !private ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIModalPresentationStyle"]
-- !private ["PSo18UIFocusEnvironment", "UIPopoverArrowDirection"]
 - ["PSo18UIFocusEnvironment", "adaptivePresentationStyleForPresentationController"]
 - ["PSo18UIFocusEnvironment", "addPoints"]
 - !private ["PSo18UIFocusEnvironment", "arc4random_uniform"]
@@ -1517,7 +1380,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "b20"]
 - ["PSo18UIFocusEnvironment", "b21"]
 - ["PSo18UIFocusEnvironment", "b22"]
-- !private ["PSo18UIFocusEnvironment", "bounds"]
 - ["PSo18UIFocusEnvironment", "button00"]
 - ["PSo18UIFocusEnvironment", "button01"]
 - ["PSo18UIFocusEnvironment", "button02"]
@@ -1529,7 +1391,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "button22"]
 - ["PSo18UIFocusEnvironment", "changeHide"]
 - ["PSo18UIFocusEnvironment", "changeShow"]
-- !private ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "hidden"]
 - ["PSo18UIFocusEnvironment", "hideButton"]
@@ -1550,8 +1411,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "miss"]
 - ["PSo18UIFocusEnvironment", "missBtn"]
 - ["PSo18UIFocusEnvironment", "missLabel"]
-- !private ["PSo18UIFocusEnvironment", "modalPresentationStyle"]
-- !private ["PSo18UIFocusEnvironment", "permittedArrowDirections"]
 - ["PSo18UIFocusEnvironment", "popoverPresentationController"]
 - ["PSo18UIFocusEnvironment", "popoverPresentationControllerDidDismissPopover"]
 - ["PSo18UIFocusEnvironment", "popoverPresentationControllerShouldDismissPopover"]
@@ -1559,6 +1418,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "prepareForSegue"]
 - ["PSo18UIFocusEnvironment", "presentationController"]
 - ["PSo18UIFocusEnvironment", "runGame"]
+- ["PSo18UIFocusEnvironment", "running"]
 - ["PSo18UIFocusEnvironment", "score"]
 - ["PSo18UIFocusEnvironment", "scoreLabel"]
 - !private ["PSo18UIFocusEnvironment", "scoreP"]
@@ -1572,8 +1432,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "showButton21"]
 - ["PSo18UIFocusEnvironment", "showButton22"]
 - ["PSo18UIFocusEnvironment", "showTime"]
-- !private ["PSo18UIFocusEnvironment", "sourceRect"]
-- !private ["PSo18UIFocusEnvironment", "sourceView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "timer00a"]
 - ["PSo18UIFocusEnvironment", "timer00b"]
@@ -1593,26 +1451,15 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "timer21b"]
 - ["PSo18UIFocusEnvironment", "timer22a"]
 - ["PSo18UIFocusEnvironment", "timer22b"]
-- !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - !private ["PSo18UIFocusEnvironment", "wafbasicViewController"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo7UILabel", "text"]
 - !private ["OSC24UIModalPresentationStyle", "None"]
-- !private ["OSC24UIModalPresentationStyle", "Popover"]
-- !private ["VSC23UIPopoverArrowDirection", "init"]
-- !private ["CSo31UIPopoverPresentationController", "delegate"]
-- !private ["CSo31UIPopoverPresentationController", "permittedArrowDirections"]
-- !private ["CSo31UIPopoverPresentationController", "sourceRect"]
-- !private ["CSo31UIPopoverPresentationController", "sourceView"]
-- !private ["PSo39UIPopoverPresentationControllerDelegate", "CGRectGetMidX"]
-- !private ["PSo39UIPopoverPresentationControllerDelegate", "CGRectGetMidY"]
-- !private ["PSo39UIPopoverPresentationControllerDelegate", "CGRectMake"]
 - !private ["PSo39UIPopoverPresentationControllerDelegate", "Double"]
 - ["PSo39UIPopoverPresentationControllerDelegate", "NSTimer"]
 - !private ["PSo39UIPopoverPresentationControllerDelegate", "String"]
 - !private ["PSo39UIPopoverPresentationControllerDelegate", "UIModalPresentationStyle"]
-- !private ["PSo39UIPopoverPresentationControllerDelegate", "UIPopoverArrowDirection"]
 - ["PSo39UIPopoverPresentationControllerDelegate", "adaptivePresentationStyleForPresentationController"]
 - !private ["PSo39UIPopoverPresentationControllerDelegate", "addPoints"]
 - !private ["PSo39UIPopoverPresentationControllerDelegate", "arc4random_uniform"]
@@ -1648,6 +1495,7 @@ depends-member:
 - ["PSo39UIPopoverPresentationControllerDelegate", "prepareForPopoverPresentation"]
 - ["PSo39UIPopoverPresentationControllerDelegate", "presentationController"]
 - !private ["PSo39UIPopoverPresentationControllerDelegate", "runGame"]
+- !private ["PSo39UIPopoverPresentationControllerDelegate", "running"]
 - !private ["PSo39UIPopoverPresentationControllerDelegate", "score"]
 - !private ["PSo39UIPopoverPresentationControllerDelegate", "scoreLabel"]
 - !private ["PSo39UIPopoverPresentationControllerDelegate", "showButton"]
@@ -1678,18 +1526,10 @@ depends-member:
 - !private ["PSo39UIPopoverPresentationControllerDelegate", "timer21b"]
 - !private ["PSo39UIPopoverPresentationControllerDelegate", "timer22a"]
 - !private ["PSo39UIPopoverPresentationControllerDelegate", "timer22b"]
-- !private ["PSo39UIPopoverPresentationControllerDelegate", "view"]
 - !private ["PSo39UIPopoverPresentationControllerDelegate", "wafbasicViewController"]
 - ["PSo39UIPopoverPresentationControllerDelegate", ""]
-- !private ["CSo24UIPresentationController", "delegate"]
-- !private ["CSo24UIPresentationController", "permittedArrowDirections"]
-- !private ["CSo24UIPresentationController", "sourceRect"]
-- !private ["CSo24UIPresentationController", "sourceView"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
-- !private ["CSo11UIResponder", "CGRectGetMidX"]
-- !private ["CSo11UIResponder", "CGRectGetMidY"]
-- !private ["CSo11UIResponder", "CGRectMake"]
 - ["CSo11UIResponder", "Double"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "NSTimer"]
@@ -1698,7 +1538,6 @@ depends-member:
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UIModalPresentationStyle"]
-- !private ["CSo11UIResponder", "UIPopoverArrowDirection"]
 - ["CSo11UIResponder", "UIPresentationController"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UInt32"]
@@ -1714,7 +1553,6 @@ depends-member:
 - ["CSo11UIResponder", "b20"]
 - ["CSo11UIResponder", "b21"]
 - ["CSo11UIResponder", "b22"]
-- !private ["CSo11UIResponder", "bounds"]
 - ["CSo11UIResponder", "button00"]
 - ["CSo11UIResponder", "button01"]
 - ["CSo11UIResponder", "button02"]
@@ -1746,7 +1584,6 @@ depends-member:
 - ["CSo11UIResponder", "miss"]
 - ["CSo11UIResponder", "missBtn"]
 - ["CSo11UIResponder", "missLabel"]
-- !private ["CSo11UIResponder", "modalPresentationStyle"]
 - ["CSo11UIResponder", "popoverPresentationController"]
 - ["CSo11UIResponder", "popoverPresentationControllerDidDismissPopover"]
 - ["CSo11UIResponder", "popoverPresentationControllerShouldDismissPopover"]
@@ -1754,6 +1591,7 @@ depends-member:
 - ["CSo11UIResponder", "prepareForSegue"]
 - ["CSo11UIResponder", "presentationController"]
 - ["CSo11UIResponder", "runGame"]
+- ["CSo11UIResponder", "running"]
 - ["CSo11UIResponder", "score"]
 - ["CSo11UIResponder", "scoreLabel"]
 - !private ["CSo11UIResponder", "scoreP"]
@@ -1786,17 +1624,12 @@ depends-member:
 - ["CSo11UIResponder", "timer21b"]
 - ["CSo11UIResponder", "timer22a"]
 - ["CSo11UIResponder", "timer22b"]
-- !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["CSo11UIResponder", "wafbasicViewController"]
-- !private ["PSo16UIStateRestoring", "CGRectGetMidX"]
-- !private ["PSo16UIStateRestoring", "CGRectGetMidY"]
-- !private ["PSo16UIStateRestoring", "CGRectMake"]
 - !private ["PSo16UIStateRestoring", "Double"]
 - ["PSo16UIStateRestoring", "NSTimer"]
 - !private ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UIModalPresentationStyle"]
-- !private ["PSo16UIStateRestoring", "UIPopoverArrowDirection"]
 - ["PSo16UIStateRestoring", "adaptivePresentationStyleForPresentationController"]
 - ["PSo16UIStateRestoring", "addPoints"]
 - !private ["PSo16UIStateRestoring", "arc4random_uniform"]
@@ -1839,7 +1672,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "miss"]
 - ["PSo16UIStateRestoring", "missBtn"]
 - ["PSo16UIStateRestoring", "missLabel"]
-- !private ["PSo16UIStateRestoring", "modalPresentationStyle"]
 - ["PSo16UIStateRestoring", "popoverPresentationController"]
 - ["PSo16UIStateRestoring", "popoverPresentationControllerDidDismissPopover"]
 - ["PSo16UIStateRestoring", "popoverPresentationControllerShouldDismissPopover"]
@@ -1847,6 +1679,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "prepareForSegue"]
 - ["PSo16UIStateRestoring", "presentationController"]
 - ["PSo16UIStateRestoring", "runGame"]
+- ["PSo16UIStateRestoring", "running"]
 - ["PSo16UIStateRestoring", "score"]
 - ["PSo16UIStateRestoring", "scoreLabel"]
 - !private ["PSo16UIStateRestoring", "scoreP"]
@@ -1878,20 +1711,15 @@ depends-member:
 - ["PSo16UIStateRestoring", "timer21b"]
 - ["PSo16UIStateRestoring", "timer22a"]
 - ["PSo16UIStateRestoring", "timer22b"]
-- !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - !private ["PSo16UIStateRestoring", "wafbasicViewController"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo17UIStoryboardSegue", "destinationViewController"]
 - !private ["CSo17UIStoryboardSegue", "identifier"]
-- !private ["PSo18UITraitEnvironment", "CGRectGetMidX"]
-- !private ["PSo18UITraitEnvironment", "CGRectGetMidY"]
-- !private ["PSo18UITraitEnvironment", "CGRectMake"]
 - !private ["PSo18UITraitEnvironment", "Double"]
 - ["PSo18UITraitEnvironment", "NSTimer"]
 - !private ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIModalPresentationStyle"]
-- !private ["PSo18UITraitEnvironment", "UIPopoverArrowDirection"]
 - ["PSo18UITraitEnvironment", "adaptivePresentationStyleForPresentationController"]
 - ["PSo18UITraitEnvironment", "addPoints"]
 - !private ["PSo18UITraitEnvironment", "arc4random_uniform"]
@@ -1904,7 +1732,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "b20"]
 - ["PSo18UITraitEnvironment", "b21"]
 - ["PSo18UITraitEnvironment", "b22"]
-- !private ["PSo18UITraitEnvironment", "bounds"]
 - ["PSo18UITraitEnvironment", "button00"]
 - ["PSo18UITraitEnvironment", "button01"]
 - ["PSo18UITraitEnvironment", "button02"]
@@ -1916,7 +1743,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "button22"]
 - ["PSo18UITraitEnvironment", "changeHide"]
 - ["PSo18UITraitEnvironment", "changeShow"]
-- !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "hidden"]
 - ["PSo18UITraitEnvironment", "hideButton"]
@@ -1937,8 +1763,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "miss"]
 - ["PSo18UITraitEnvironment", "missBtn"]
 - ["PSo18UITraitEnvironment", "missLabel"]
-- !private ["PSo18UITraitEnvironment", "modalPresentationStyle"]
-- !private ["PSo18UITraitEnvironment", "permittedArrowDirections"]
 - ["PSo18UITraitEnvironment", "popoverPresentationController"]
 - ["PSo18UITraitEnvironment", "popoverPresentationControllerDidDismissPopover"]
 - ["PSo18UITraitEnvironment", "popoverPresentationControllerShouldDismissPopover"]
@@ -1946,6 +1770,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "prepareForSegue"]
 - ["PSo18UITraitEnvironment", "presentationController"]
 - ["PSo18UITraitEnvironment", "runGame"]
+- ["PSo18UITraitEnvironment", "running"]
 - ["PSo18UITraitEnvironment", "score"]
 - ["PSo18UITraitEnvironment", "scoreLabel"]
 - !private ["PSo18UITraitEnvironment", "scoreP"]
@@ -1959,8 +1784,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "showButton21"]
 - ["PSo18UITraitEnvironment", "showButton22"]
 - ["PSo18UITraitEnvironment", "showTime"]
-- !private ["PSo18UITraitEnvironment", "sourceRect"]
-- !private ["PSo18UITraitEnvironment", "sourceView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "timer00a"]
 - ["PSo18UITraitEnvironment", "timer00b"]
@@ -1980,18 +1803,13 @@ depends-member:
 - ["PSo18UITraitEnvironment", "timer21b"]
 - ["PSo18UITraitEnvironment", "timer22a"]
 - ["PSo18UITraitEnvironment", "timer22b"]
-- !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - !private ["PSo18UITraitEnvironment", "wafbasicViewController"]
 - ["PSo18UITraitEnvironment", ""]
-- !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "hidden"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
-- !private ["CSo16UIViewController", "CGRectGetMidX"]
-- !private ["CSo16UIViewController", "CGRectGetMidY"]
-- !private ["CSo16UIViewController", "CGRectMake"]
 - ["CSo16UIViewController", "Double"]
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "NSTimer"]
@@ -2000,7 +1818,6 @@ depends-member:
 - ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UIModalPresentationStyle"]
-- !private ["CSo16UIViewController", "UIPopoverArrowDirection"]
 - ["CSo16UIViewController", "UIPresentationController"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UInt32"]
@@ -2047,7 +1864,6 @@ depends-member:
 - ["CSo16UIViewController", "miss"]
 - ["CSo16UIViewController", "missBtn"]
 - ["CSo16UIViewController", "missLabel"]
-- !private ["CSo16UIViewController", "modalPresentationStyle"]
 - ["CSo16UIViewController", "popoverPresentationController"]
 - ["CSo16UIViewController", "popoverPresentationControllerDidDismissPopover"]
 - ["CSo16UIViewController", "popoverPresentationControllerShouldDismissPopover"]
@@ -2055,6 +1871,7 @@ depends-member:
 - ["CSo16UIViewController", "prepareForSegue"]
 - ["CSo16UIViewController", "presentationController"]
 - ["CSo16UIViewController", "runGame"]
+- ["CSo16UIViewController", "running"]
 - ["CSo16UIViewController", "score"]
 - ["CSo16UIViewController", "scoreLabel"]
 - !private ["CSo16UIViewController", "scoreP"]
@@ -2086,7 +1903,6 @@ depends-member:
 - ["CSo16UIViewController", "timer21b"]
 - ["CSo16UIViewController", "timer22a"]
 - ["CSo16UIViewController", "timer22b"]
-- !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - !private ["CSo16UIViewController", "wafbasicViewController"]
 - ["CSo16UIViewController", ""]
@@ -2116,18 +1932,13 @@ depends-member:
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
-- ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
-- !private ["Ps12_Reflectable", "bounds"]
 - !private ["Ps12_Reflectable", "hidden"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "text"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 - ["C11group8alpha22wafbasicViewController", "AnyObject"]
 - ["C11group8alpha22wafbasicViewController", "Bool"]
-- !private ["C11group8alpha22wafbasicViewController", "CGRectGetMidX"]
-- !private ["C11group8alpha22wafbasicViewController", "CGRectGetMidY"]
-- !private ["C11group8alpha22wafbasicViewController", "CGRectMake"]
 - ["C11group8alpha22wafbasicViewController", "Double"]
 - ["C11group8alpha22wafbasicViewController", "Int"]
 - ["C11group8alpha22wafbasicViewController", "NSTimer"]
@@ -2136,7 +1947,6 @@ depends-member:
 - ["C11group8alpha22wafbasicViewController", "UIButton"]
 - ["C11group8alpha22wafbasicViewController", "UILabel"]
 - ["C11group8alpha22wafbasicViewController", "UIModalPresentationStyle"]
-- !private ["C11group8alpha22wafbasicViewController", "UIPopoverArrowDirection"]
 - ["C11group8alpha22wafbasicViewController", "UIPresentationController"]
 - ["C11group8alpha22wafbasicViewController", "UIStoryboardSegue"]
 - ["C11group8alpha22wafbasicViewController", "UInt32"]
@@ -2189,6 +1999,7 @@ depends-member:
 - ["C11group8alpha22wafbasicViewController", "prepareForSegue"]
 - ["C11group8alpha22wafbasicViewController", "presentationController"]
 - ["C11group8alpha22wafbasicViewController", "runGame"]
+- ["C11group8alpha22wafbasicViewController", "running"]
 - ["C11group8alpha22wafbasicViewController", "score"]
 - ["C11group8alpha22wafbasicViewController", "scoreLabel"]
 - ["C11group8alpha22wafbasicViewController", "showButton"]
@@ -2219,19 +2030,16 @@ depends-member:
 - ["C11group8alpha22wafbasicViewController", "timer21b"]
 - ["C11group8alpha22wafbasicViewController", "timer22a"]
 - ["C11group8alpha22wafbasicViewController", "timer22b"]
-- !private ["C11group8alpha22wafbasicViewController", "view"]
 - ["C11group8alpha22wafbasicViewController", "viewDidLoad"]
 - !private ["C11group8alpha22wafbasicViewController", "wafbasicViewController"]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
-- !private "Ps23ArrayLiteralConvertible"
 - !private "Ps22BidirectionalIndexType"
 - !private "Ps21BitwiseOperationsType"
 - !private "Sb"
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
-- !private "V12CoreGraphics7CGFloat"
 - "Ps11CVarArgType"
 - !private "Vs9Character"
 - !private "Ps10Comparable"
@@ -2263,14 +2071,11 @@ depends-nominal:
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - "CSo7NSTimer"
-- "Ps21NilLiteralConvertible"
-- !private "Ps13OptionSetType"
-- "Sq"
+- !private "Sq"
 - !private "Ps16OutputStreamType"
 - !private "C11group8alpha19PauseViewController"
 - !private "Ps21RandomAccessIndexType"
 - !private "Ps16RawRepresentable"
-- !private "Ps14SetAlgebraType"
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
 - !private "Ps10Streamable"
@@ -2290,10 +2095,7 @@ depends-nominal:
 - "PSo18UIFocusEnvironment"
 - !private "CSo7UILabel"
 - !private "OSC24UIModalPresentationStyle"
-- !private "VSC23UIPopoverArrowDirection"
-- !private "CSo31UIPopoverPresentationController"
 - "PSo39UIPopoverPresentationControllerDelegate"
-- !private "CSo24UIPresentationController"
 - "CSo11UIResponder"
 - "PSo16UIStateRestoring"
 - !private "CSo17UIStoryboardSegue"
@@ -2322,18 +2124,52 @@ depends-nominal:
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
 - !private "Ps22_RandomAccessAmbiguity"
-- "Ps12_Reflectable"
+- !private "Ps12_Reflectable"
 - !private "Ps18_SignedIntegerType"
 - "C11group8alpha22wafbasicViewController"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/Firebase/Core/Sources/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "96b95fa16762bc4958da271a8f510ccc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/apt443/Documents/IOS/group8iOS/Pods/Firebase/Core/Sources/Firebase.h"
+interface-hash: "8fcf7e91f0ab24ceef97a77d4529da83"
