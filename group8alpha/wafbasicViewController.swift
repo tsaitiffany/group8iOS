@@ -46,6 +46,7 @@ class wafbasicViewController: UIViewController, UIPopoverPresentationControllerD
     var level:Int = 1
     var lost:Bool =  false
     var miss:Int = 0
+    var running:Bool = false;
     //time in seconds
     var hideTime:UInt32 = 6
     var showTime:Double = 8.0
@@ -159,6 +160,7 @@ class wafbasicViewController: UIViewController, UIPopoverPresentationControllerD
     
     // sets game state to run, start button timers
     func runGame() {
+        running = true;
         b00.hidden = true
         b01.hidden = true
         b02.hidden = true
@@ -304,8 +306,11 @@ class wafbasicViewController: UIViewController, UIPopoverPresentationControllerD
     
     //keeps track of misses
     func missBtn() {
-        miss += 1
-        missLabel.text = String(miss)
+        if(running)
+        {
+            miss += 1
+            missLabel.text = String(miss)
+        }
 //        if miss > 15 {
 //          TO DO, implement LOSE when miss > 15
 //        }
@@ -346,17 +351,19 @@ class wafbasicViewController: UIViewController, UIPopoverPresentationControllerD
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "PauseSegue" {
             let destination = segue.destinationViewController as! PauseViewController
-            destination.modalPresentationStyle = .Popover
-            let popoverPresentationController = destination.popoverPresentationController
-            if let _popoverPresentationController = popoverPresentationController {
-                _popoverPresentationController.sourceView = self.view
-                _popoverPresentationController.sourceRect = CGRectMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds) , 0, 0)
-                _popoverPresentationController.permittedArrowDirections = UIPopoverArrowDirection.init(rawValue: 0)
-            }
-            
-            destination.popoverPresentationController!.delegate = self
+//            destination.modalPresentationStyle = .Popover
+//            let popoverPresentationController = destination.popoverPresentationController
+//            if let _popoverPresentationController = popoverPresentationController {
+//                _popoverPresentationController.sourceView = self.view
+//                _popoverPresentationController.sourceRect = CGRectMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds) , 0, 0)
+//                _popoverPresentationController.permittedArrowDirections = UIPopoverArrowDirection.init(rawValue: 0)
+//            }
+//            
+//            destination.popoverPresentationController!.delegate = self
             destination.levelP = "\(level)"
             destination.scoreP = "\(score)"
+            destination.miss = miss
+            running = false;
         }
         
     }

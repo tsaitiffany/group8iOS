@@ -11,7 +11,6 @@ import CoreData
 
 class PictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    var pictures = [NSManagedObject]()
     
     //A queue to save the image without freezing the UI
     let saveQueue = dispatch_queue_create("saveQueue", DISPATCH_QUEUE_CONCURRENT)
@@ -102,9 +101,9 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         }
     }
 
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]?) {
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         
-        imageView.image = scale((info![UIImagePickerControllerOriginalImage] as? UIImage)!, toSize : imageView.frame.size)
+        imageView.image = scale((info[UIImagePickerControllerOriginalImage] as? UIImage)!, toSize : imageView.frame.size)
         
         dismissViewControllerAnimated(true, completion: nil)
     }

@@ -28,6 +28,7 @@ class StretchViewController: UIViewController, UIPopoverPresentationControllerDe
     @IBOutlet weak var lvlLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var correctLabel: UILabel!
+    @IBOutlet weak var factLabel: UILabel!
     
     var timer00 = NSTimer();
     var timer01 = NSTimer();
@@ -52,6 +53,8 @@ class StretchViewController: UIViewController, UIPopoverPresentationControllerDe
     var showTime:Double = 8.0
     
     var shownBtns: [[Bool]] = [[false,false,false], [false,false,false], [false,false,false]]
+    
+    let facts = ["Fun Fact! Spatial memory plays a role in recording information about one's environment and spatial orientation.", "Fun Fact! Spatial memory plays a role in short-term and long-term memory.", "Fun Fact! Spatial memory is what you use to remember the layout of your hometown.", "Fun Fact! This game helps stretch your spatial memory!", "Fun Fact! Someone who processes information verbally may perform poorly on spatial memory tests."]
     
     @IBAction func button00(sender: AnyObject) {
         b00.setBackgroundImage(UIImage(named:"circforapp"), forState: UIControlState.Normal)
@@ -153,6 +156,8 @@ class StretchViewController: UIViewController, UIPopoverPresentationControllerDe
             level += 1
             score += 100
             scoreLabel.text = String(score)
+            var num = Int(arc4random_uniform(5))
+            factLabel.text = facts[num]
             nextButton.setTitle("Next Level", forState: UIControlState.Normal)
         }
         else if (btnCount >= maxBtns && miss != 0) {
@@ -206,6 +211,7 @@ class StretchViewController: UIViewController, UIPopoverPresentationControllerDe
     
     @IBAction func nextLvlAction(sender: AnyObject) {
         timer00.invalidate()
+        factLabel.text = ""
         runGame()
     }
     
@@ -254,17 +260,17 @@ class StretchViewController: UIViewController, UIPopoverPresentationControllerDe
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "PauseID" {
+        if segue.identifier == "PauseSegue" {
             let destination = segue.destinationViewController as! PauseViewController
-            destination.modalPresentationStyle = .Popover
-            let popoverPresentationController = destination.popoverPresentationController
-            if let _popoverPresentationController = popoverPresentationController {
-                _popoverPresentationController.sourceView = self.view
-                _popoverPresentationController.sourceRect = CGRectMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds) , 0, 0)
-                _popoverPresentationController.permittedArrowDirections = UIPopoverArrowDirection.init(rawValue: 0)
-            }
+//            destination.modalPresentationStyle = .Popover
+//            let popoverPresentationController = destination.popoverPresentationController
+//            if let _popoverPresentationController = popoverPresentationController {
+//                _popoverPresentationController.sourceView = self.view
+//                _popoverPresentationController.sourceRect = CGRectMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds) , 0, 0)
+//                _popoverPresentationController.permittedArrowDirections = UIPopoverArrowDirection.init(rawValue: 0)
+//            }
             
-            destination.popoverPresentationController!.delegate = self
+//            destination.popoverPresentationController!.delegate = self
             destination.levelP = "\(level)"
             destination.scoreP = "\(score)"
         }
